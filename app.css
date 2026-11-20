@@ -6,10 +6,33 @@
 
 /** Productos */
 
-body{
+@font-face {
+    font-family: Playfair;
+    src: url(fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf);
+}
 
-  
-  
+@font-face{
+    font-family: Raleway;
+    src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Playfair', 'Raleway';
+}
+
+.button1{
+    border:none;
+    border-radius: 0.9rem ;
+}
+.searching{
+    border:none;
+    outline: none;
+    border-radius: 0.9rem;
+}
+
+.search-box:focus-within{
+    outline:1.5px solid rgb(9, 39, 172);
+    border-radius: 0.9rem;
 }
 
 .list a{
@@ -25,12 +48,9 @@ body{
 
     
     display:flex;
-    padding-top: 80px;
-   
-    
+    padding-top: 80px; 
 }
-
-.section1 .container{
+.section1 .article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,9 +61,75 @@ body{
     height: 70px;
     width: 170px;
     background-color: white;
-    border: none;
-    
+    border: none; 
 }
 
+.section2 .container1{
+    background-color: #037bc0;
+}
+
+.section2 .article{
+    flex:1;
+    background-color: #037bc0;
+}
+
+.section3 .article{
+    flex:1;
+    background-color: #037bc0;
+}
+.section3 .img{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+}
+
+.section4 .article{
+    flex:1;
+    text-align: center;
+    border:1px solid rgba(101, 168, 255, 0.548);
+    border-radius: 15px 15px 3px 3px;
+    background-color:rgba(101, 168, 255, 0.548) ;
+
+}
+.category-info{
+    height: 50px;
+    background-color:rgba(101, 168, 255, 0.548) ;
+    color:#188af5;
+}
+.category-info p{
+    margin:0;  
+}
+
+.section4 .article .img{
+    border-radius: 15px 15px 0 0;
+}
+
+.section4 .img{
+    width:100%;
+}
+
+.footer .section{
+    flex:1;
+    text-align: center;
+
+}
+
+.footer .section .list1{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer .group{
+    background-color: rgb(66, 65, 65);
+    color:white;
+}
+.footer .ars{
+    background-color: rgb(43, 42, 42);
+    color:white;
+}
 
 
