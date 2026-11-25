@@ -79,8 +79,13 @@ body{
     transform: scaleX(1);
 }
 
-
-
+.price{
+    transition:transform 1s ease;
+    cursor: pointer;
+}
+.price:hover{
+    transform: scale(1.5);
+}
 
 .section1 .article{
     background-size:cover;
