@@ -6,14 +6,10 @@
 
 /** Productos */
 
-@font-face {
-    font-family: Playfair;
-    src: url(fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf);
-}
 
 @font-face{
     font-family: Raleway;
-    src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
 }
 
 
@@ -24,6 +20,7 @@ body{
 .button1{
     border:none;
     border-radius: 0.9rem ;
+    height: 25px;
 }
 
 .btn-green{
@@ -36,7 +33,7 @@ body{
 }
 
 .btn-green:hover{
-    background-color:rgb(108, 155, 97) ;
+    background-color:rgb(51, 153, 48) ;
 
 }
 
@@ -47,14 +44,22 @@ body{
     border-radius: 0.9rem;
 }
 
+.search-box{
+    max-width: 260px;
+    width: 100%;
+}
+
+.form-control{
+    height: 25px;
+}
+
 .search-box:focus-within{
     outline:1.5px solid rgb(9, 39, 172);
     border-radius: 0.9rem;
 }
 
-.list a{
-    color:white;
-    text-decoration: none;
+.nav-item a{
+    display: inline-block;
 }
 
 .navbar-nav a::after{
